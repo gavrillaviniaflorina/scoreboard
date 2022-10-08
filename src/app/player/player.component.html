@@ -1,0 +1,10 @@
+<article class="d-flex flex-row justify-content-between align-items-center m-3 border border-primary border rounded">
+    <section>
+        <i class="bi bi-x-lg delete" (click)="onRemovePlayer()"></i>
+        <i class="bi bi-award "></i>
+    </section>
+    <h1 class="align-self-start">{{player.name}}</h1>
+    <app-counter [id]="player.id!" [score]="player.score" (changeScore)="onChangeScore($event)">
+
+    </app-counter>
+</article>

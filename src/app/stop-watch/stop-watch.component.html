@@ -1,0 +1,9 @@
+<article class="d-flex flex-column  bg-light text-dark rounded">
+    <h3 class="align-self-center">STOPWATCH</h3>
+    <h1 class="align-self-center" id="clock">0</h1>
+    <div class="d-flex flex-row justify-content-around">
+        <button type="button " *ngIf="!running" class="btn btn-primary " (click)="Start()">START</button>
+        <button type="button " *ngIf="running" class="btn btn-primary " (click)="Stop()">STOP</button>
+        <button type="button " class="btn btn-primary " (click)="Reset()">RESET</button>
+    </div>
+</article>
